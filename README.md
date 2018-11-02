@@ -24,7 +24,7 @@ http://report-api.nemoka.com/report
 |  
 
 ### Example:
-http://report-api.nemoka.com/report?token=we2917n2is61o92s72m0d71bd9am37xj9&start_dt=2018-10-17&end_dt=2018-10-18&dimension=Clicks&dimension=Revenue
+http://report-api.nemoka.com/v1/report?token=we2917n2is61o92s72m0d71bd9am37xj9&start_dt=2018-10-17&end_dt=2018-10-18&dimension=Clicks&dimension=Revenue
 
 ## Response Field
 
@@ -39,7 +39,7 @@ http://report-api.nemoka.com/report?token=we2917n2is61o92s72m0d71bd9am37xj9&star
 
 
 ### Example 1: Response Dimension(Impression、Clicks、Revenue)
-http://report-api.nemoka.com/report?token=we2917n2is61o92s72m0d71bd9am37xj9&start_dt=2018-10-17&end_dt=2018-10-18&dimension=Clicks&dimension=Revenue
+http://report-api.nemoka.com/v1/report?token=we2917n2is61o92s72m0d71bd9am37xj9&start_dt=2018-10-17&end_dt=2018-10-18&dimension=Clicks&dimension=Revenue
 
 ```json
 {
@@ -57,7 +57,7 @@ total: 2
 ```
 
 ### Example 2: Response Dimension(Impression、Clicks、Revenue) filter by country
-http://report-api.nemoka.com/report?token=we2917n2is61o92s72m0d71bd9am37xj9&start_dt=2018-10-17&end_dt=2018-10-18&dimension=Clicks&dimension=Revenue&country=US
+http://report-api.nemoka.com/v1/report?token=we2917n2is61o92s72m0d71bd9am37xj9&start_dt=2018-10-17&end_dt=2018-10-18&dimension=Clicks&dimension=Revenue&country=US
 
 ```json
 {
