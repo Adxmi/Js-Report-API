@@ -39,7 +39,7 @@ http://report-api.nemoka.com/v1/report?token=we2917n2is61o92s72m0d71bd9am37xj9&s
 
 
 ### Example 1: Response Dimension(Impression、Clicks、Revenue)
-http://report-api.nemoka.com/v1/report?token=we2917n2is61o92s72m0d71bd9am37xj9&start_dt=2018-10-17&end_dt=2018-10-18&dimension=Clicks&dimension=Revenue
+http://report-api.nemoka.com/v1/report?token=we2917n2is61o92s72m0d71bd9am37xj9&start_dt=2018-10-17&end_dt=2018-10-18&dimension=Clicks&dimension=Revenue&dimension=Requested&dimension=Filled
 
 ```json
 {
@@ -49,7 +49,10 @@ data: [
 {
 Impression: 582406,
 Clicks: 4020,
-Revenue: 554.001,}]
+Revenue: 554.001,
+Requested: 600030,
+Filled: 7862330,
+}]
 page: 1,
 pagesize: 50,
 total: 2
@@ -57,7 +60,7 @@ total: 2
 ```
 
 ### Example 2: Response Dimension(Impression、Clicks、Revenue) filter by country
-http://report-api.nemoka.com/v1/report?token=we2917n2is61o92s72m0d71bd9am37xj9&start_dt=2018-10-17&end_dt=2018-10-18&dimension=Clicks&dimension=Revenue&country=US
+http://report-api.nemoka.com/v1/report?token=we2917n2is61o92s72m0d71bd9am37xj9&start_dt=2018-10-17&end_dt=2018-10-18&dimension=Clicks&dimension=Revenue&dimension=Requested&dimension=Filled&country=US
 
 ```json
 {
@@ -67,7 +70,10 @@ data: [
 {
 Impression: 382406,
 Clicks: 2020,
-Revenue: 354.001,}]
+Revenue: 354.001,
+Requested: 600030,
+Filled: 7862330,
+}]
 page: 1,
 pagesize: 50,
 total: 2
