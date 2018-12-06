@@ -12,16 +12,16 @@ http://report-api.nemoka.com/report
 
 | Parameter   | Type   | Mandatory | Example     |Description    |
 |-------------|--------|-----------|-------------------------|------------------------------------------------------------------------------------------------------------------|
-| token      | string | Y         | token=we2917n2is61o92s72m0d71bd9am37xj |Unique token to access Js Report API.                                                                        |
-| start_date   | string( format %Y-%m-%d )    | Y         | start_date=2018-10-17          |Assign the start date to retrieve report.           |
+| token      | string | Y         | token=we2917n |Unique token to access Js Report API.                                                                        |
+| start_date   | string( format %Y-%m-%d ) | Y         | start_date=2018-10-17          |Assign the start date to retrieve report.           |
 | end_dt | string( format %Y-%m-%d ) | Y         | end_dt=2018-10-18         |Assign the end date to retrieve report.  | 
 | dimension        |  enum(Impression、Clicks、Revenue、Request、Response、Filled、Country、SlotID、AppName)    | Y        |   dimension=Clicks&dimension=Revenue            |The dimension would be responded |                                                               |
-| page        | int  | N         | page=1              | Query which page default 1      |
-| pagesize        | int  | N         | pagesize=50              | Rows of one page default 50.      |
-| media        | enum  | N         | media=3201162             | Publishers can get data of specific media. All the data would be responded if publisher wouldn’t set this parameter.      |
-| slot_id        | enum  | N         | slot_id=320116255535293290              | Publishers can get data of specific slot_id. All the data would be responded if publisher wouldn’t set this parameter.      |
-| country     | enum  | N         | country=US&country=CN&country=AU        | Publishers can get data of specific countries.  all the data would be responded if publisher wouldn’t set this parameter.  |
-|  
+| page        | int  | N         | page=1       | Query which page default 1      |
+| pagesize        | int  | N         | pagesize=50   | Rows of one page default 50.      |
+| media        | enum  | N         | media=3201162   | Publishers can get data of specific media. All the data would be responded if publisher wouldn’t set this parameter.      |
+| slot_id        | enum  | N         | slot_id=320110010    | Publishers can get data of specific slot_id. All the data would be responded if publisher wouldn’t set this parameter.      |
+| country     | enum  | N         | country=US&country=CN        | Publishers can get data of specific countries.  all the data would be responded if publisher wouldn’t set this parameter.  |
+
 
 ### Example:
 http://report-api.nemoka.com/v1/report?token=we2917n2is61o92s72m0d71bd9am37xj9&start_dt=2018-10-17&end_dt=2018-10-18&dimension=Clicks&dimension=Revenue
