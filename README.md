@@ -15,7 +15,7 @@ http://report-api.nemoka.com/report
 | token      | string | Y         | token=we2917n2is61o92s72m0d71bd9am37xj |Unique token to access Js Report API.                                                                        |
 | start_date   | string( format %Y-%m-%d )    | Y         | start_date=2018-10-17          |Assign the start date to retrieve report.           |
 | end_dt | string( format %Y-%m-%d ) | Y         | end_dt=2018-10-18         |Assign the end date to retrieve report.  | 
-| dimension        |  enum(Impression、Clicks、Revenue、Request、Filed)    | Y        |   dimension=Clicks&dimension=Revenue            |The dimension would be responded |                                                               |
+| dimension        |  enum(Impression、Clicks、Revenue、Request、Response、Filled、Country、SlotID、AppName)    | Y        |   dimension=Clicks&dimension=Revenue            |The dimension would be responded |                                                               |
 | page        | int  | N         | page=1              | Query which page default 1      |
 | pagesize        | int  | N         | pagesize=50              | Rows of one page default 50.      |
 | media        | enum  | N         | media=3201162             | Publishers can get data of specific media. All the data would be responded if publisher wouldn’t set this parameter.      |
@@ -43,19 +43,18 @@ http://report-api.nemoka.com/v1/report?token=we2917n2is61o92s72m0d71bd9am37xj9&s
 
 ```json
 {
-code: 0,
-msg: "success",
-data: [
-{
-Impression: 582406,
-Clicks: 4020,
-Revenue: 554.001,
-Request: 600030,
-Filled: 7862330,
-}]
-page: 1,
-pagesize: 50,
-total: 2
+	"code": 0,
+	"msg": "success",
+	"data": [{
+		"Impression": 582406,
+		"Clicks": 4020,
+		"Revenue": 554.001,
+		"Request": 600030,
+		"Filled": 7862330
+	}],
+	"page": 1,
+	"pagesize": 50,
+	"total": 2
 }
 ```
 
@@ -64,19 +63,18 @@ http://report-api.nemoka.com/v1/report?token=we2917n2is61o92s72m0d71bd9am37xj9&s
 
 ```json
 {
-code: 0,
-msg: "success",
-data: [
-{
-Impression: 382406,
-Clicks: 2020,
-Revenue: 354.001,
-Request: 600030,
-Filled: 7862330,
-}]
-page: 1,
-pagesize: 50,
-total: 2
+	"code": 0,
+	"msg": "success",
+	"data": [{
+		"Impression": 382406,
+		"Clicks": 2020,
+		"Revenue": 354.001,
+		"Request": 600030,
+		"Filled": 7862330
+	}],
+	"page": 1,
+	"pagesize": 50,
+	"total": 2
 }
 ```
 
